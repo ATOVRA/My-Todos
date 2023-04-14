@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>My Todos</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-div">
+        <div class="title-div">
+          <h1>My Todos</h1>
+          <p id="title-time">hh:mm:ss,  yyyy-mm-dd</p>
+        </div>
+        <div class="wrapper">
+          <input type="checkbox" name="checkbox" class="switch" id="dark-mode-toggle"/>
+        </div>
+      </div>
+      <form class="form-create">
+        <input
+          type="text"
+          name="text"
+          class="input"
+          id="create-text"
+          placeholder="Type something here...."
+        />
+        <button class="create-button" id="todo-add-btn">
+          <span class="text">Add</span>
+        </button>
+      </form>
+      <div class="todos-container">
+        <ul class="todos-ul" id="todos-wrap">
+        </ul>
+      </div>
+    </div>
+
+    <div class="overlay">
+        <div class="modal-div">
+            <div class="modal-content">
+                <img src="./Images/7324084_ui_interface_wrong_delete_cancel_icon.svg" id="modal-close">
+                <form id="edit-form">
+                    <input type="text" id="edit-input" class="input">
+                    <button class="edit-save-btn">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/mode.js"></script>
+    <script src="./js/todos.js"></script>
+  </body>
+</html>
